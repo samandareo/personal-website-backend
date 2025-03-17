@@ -1,0 +1,16 @@
+# Exported from Render on 2025-03-17T09:04:48Z
+services:
+- type: web
+  name: pwb
+  runtime: python
+  repo: https://github.com/samandareo/personal-website-backend
+  plan: free
+  envVars:
+  - key: ALLOWED_HOSTS
+    sync: false
+  - key: SECRET_KEY
+    sync: false
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn backend.wsgi:application
+version: "1"
