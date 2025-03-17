@@ -19,8 +19,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['pwb-xcls.onrender.com', 'localhost', '127.0.0.1', '*']
 
-
-CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
